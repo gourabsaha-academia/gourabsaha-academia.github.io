@@ -55,9 +55,8 @@
     .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: #3f3d9e; transform: scaleX(0); transition: transform .25s ease; border-radius: 2px; }
     .chip-filter[aria-pressed="true"] { background: #1e293b; color: #fff; border-color: #1e293b; }
     .photo-glow { position: relative; }
-    .photo-glow::before { content: ''; position: absolute; inset: -16px; border-radius: 9999px; background: conic-gradient(from 140deg, #a5b4fc, #c4b5fd, #e0e7ff, #93c5fd, #a5b4fc); filter: blur(22px); opacity: .85; z-index: -1; animation: glowSpin 14s linear infinite; }
+    .photo-glow::before { content: ''; position: absolute; inset: -16px; border-radius: 9999px; background: conic-gradient(from 140deg, #a5b4fc, #c4b5fd, #e0e7ff, #93c5fd, #a5b4fc); filter: blur(20px); opacity: .55; z-index: -1; }
     .photo-glow::after { content: ''; position: absolute; inset: -4px; border-radius: 9999px; box-shadow: 0 0 0 1px rgba(129,140,248,.35), 0 0 28px 4px rgba(129,140,248,.30); z-index: -1; }
-    @keyframes glowSpin { to { transform: rotate(360deg); } }
     .poster-thumb img { transition: transform .5s cubic-bezier(.2,.7,.2,1); }
     .poster-thumb:hover img, .poster-thumb:focus-visible img { transform: scale(1.035); }
     .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
@@ -71,7 +70,6 @@
       html { scroll-behavior: auto; }
       .reveal { opacity: 1; transform: none; transition: none; }
       .poster-thumb img { transition: none; }
-      .photo-glow::before { animation: none; }
     }
   </style>
 
@@ -160,20 +158,19 @@
       <div class="mx-auto grid max-w-6xl gap-12 px-4 pb-16 pt-12 sm:px-6 md:pt-20 lg:grid-cols-[1fr_360px] lg:gap-16">
 
         <div class="order-2 lg:order-1">
-          <p class="font-mono text-xs uppercase tracking-[0.18em] text-accent">Electrical &amp; Electronic Engineering · Researcher</p>
+          <p class="font-mono text-xs uppercase tracking-[0.18em] text-accent">Electrical &amp; Electronic Engineering · Researcher &amp; Adjunct Lecturer</p>
           <h1 class="mt-4 font-serif text-5xl font-medium leading-[1.05] tracking-tight text-slate-900 sm:text-6xl">Gourab Saha</h1>
           <p class="mt-4 text-[17px] text-slate-700">
-            Research Assistant, Control &amp; Applications Research Centre (CARC)<br class="hidden sm:block" />
-            Department of EEE, <span class="font-medium text-slate-900">BRAC University</span>, Dhaka, Bangladesh
+            Researcher &amp; Adjunct Lecturer, Department of EEE, <span class="font-medium text-slate-900">BRAC University</span>, Dhaka, Bangladesh
           </p>
-          <p class="mt-1 text-[15px] text-zinc-500">Former Adjunct Lecturer, Department of EEE, BRAC University</p>
+          <p class="mt-1 text-[15px] text-zinc-500">B.Sc. in Electrical and Electronic Engineering, BRAC University (2023)</p>
 
           <p class="mt-6 max-w-2xl text-[16.5px] leading-relaxed">
             I'm an electrical engineer who likes building things that work outside the lab. My interests sit where
             hardware meets data: embedded systems, sensors and control, and the solar and power systems that keep them running.
             So far that has meant soil-sensing and solar irrigation units for farmers, off-grid cooling and water harvesting,
             and a blink-controlled wheelchair for people with severe motor impairment.
-            I'm first author of three Q1 journal articles and review for two international journals.
+            I'm first author of three peer-reviewed journal articles and review for two international journals.
           </p>
 
           <!-- Profile badges -->
@@ -208,7 +205,7 @@
 
           <!-- Quick facts -->
           <dl class="mt-10 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-4">
-            <div class="bg-white p-4"><dt class="text-xs text-zinc-500">Q1 journal articles</dt><dd class="mt-1 font-serif text-3xl text-slate-900">3</dd><dd class="text-xs text-zinc-500">all first author</dd></div>
+            <div class="bg-white p-4"><dt class="text-xs text-zinc-500">Journal articles</dt><dd class="mt-1 font-serif text-3xl text-slate-900">3</dd><dd class="text-xs text-zinc-500">all first author</dd></div>
             <div class="bg-white p-4"><dt class="text-xs text-zinc-500">Conference papers</dt><dd class="mt-1 font-serif text-3xl text-slate-900">6</dd><dd class="text-xs text-zinc-500">IEEE proceedings</dd></div>
             <div class="bg-white p-4"><dt class="text-xs text-zinc-500">Under review</dt><dd class="mt-1 font-serif text-3xl text-slate-900">2</dd><dd class="text-xs text-zinc-500">Heliyon, Energies</dd></div>
             <div class="bg-white p-4"><dt class="text-xs text-zinc-500">Journal reviewer</dt><dd class="mt-1 font-serif text-3xl text-slate-900">2</dd><dd class="text-xs text-zinc-500">since 2025</dd></div>
@@ -256,6 +253,18 @@
           <p class="font-mono text-xs uppercase tracking-[0.18em] text-accent">01 · Research interests</p>
           <h2 class="mt-3 font-serif text-4xl tracking-tight text-slate-900">Where I work</h2>
           <p class="mt-3">Six threads, each backed by published or ongoing work.</p>
+        </div>
+
+        <!-- Research statement -->
+        <div class="reveal mt-8 max-w-3xl rounded-2xl border border-line border-l-4 border-l-accent bg-white p-6 shadow-card">
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-900">Research statement</h3>
+          <p class="mt-3 text-[16px] leading-relaxed">
+            I am seeking MS/PhD opportunities in smart energy systems, IoT sensing and embedded control.
+            My work so far combines hardware prototyping with data-driven methods: optimal sizing and demand-side management
+            of hybrid microgrids, sensor-based precision agriculture with machine learning and fuzzy control, and real-time
+            biosignal processing for an assistive wheelchair. I want to keep building systems that are validated on real hardware
+            and field data, and to deepen my training in control, optimization and edge intelligence.
+          </p>
         </div>
 
         <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -324,7 +333,7 @@
           <div class="max-w-2xl">
             <p class="font-mono text-xs uppercase tracking-[0.18em] text-accent">02 · Publications</p>
             <h2 class="mt-3 font-serif text-4xl tracking-tight text-slate-900">Selected work</h2>
-            <p class="mt-3">Journal articles come with a one-page research poster. Click a poster to open it full size.</p>
+            <p class="mt-3">Journal articles come with a one-page research poster; click it to open full size. Each paper has an abstract you can expand.</p>
           </div>
           <label class="relative block w-full md:w-72">
             <span class="sr-only">Search publications</span>
@@ -355,7 +364,7 @@
         <div class="pub-group mt-12" data-group="journal">
           <div class="flex items-baseline justify-between border-b border-line pb-3">
             <h3 class="text-lg font-semibold text-slate-900">A · Peer-reviewed journal articles</h3>
-            <span class="font-mono text-xs text-zinc-400">Q1 · open access</span>
+            <span class="font-mono text-xs text-zinc-400">Open access</span>
           </div>
 
           <div class="mt-6 grid gap-6">
@@ -385,6 +394,13 @@
                 <p class="mt-2 text-sm"><span class="me">G. Saha</span>, M. T. Imran, S. M. Shams, M. F. A. Khan, A. K. M. A. M. Azad, M. A. Imteaz</p>
                 <p class="mt-1 text-sm italic text-slate-700">Applied Thermal Engineering, vol. 302, Art. 132073 · Elsevier</p>
                 <p class="mt-3 text-[15px]">System-level review benchmarking four AWH pathways (condensation, sorption, radiative, hybrid) under real climates, with a solar TEC unit tested for microbial safety.</p>
+                <details class="group mt-3">
+                  <summary class="inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <svg class="h-3.5 w-3.5 transition-transform group-open:rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    Abstract
+                  </summary>
+                  <p class="mt-2 rounded-lg border border-line bg-ash/70 p-4 text-[14.5px] leading-relaxed text-zinc-700">Water scarcity is one of the most serious challenges facing the world today, especially in regions with limited access to clean and reliable water sources. Atmospheric Water Harvesting (AWH) is an emerging technology that offers a sustainable and decentralized way to collect fresh water directly from the air. This review focuses on recent developments in AWH systems, especially those introduced after 2020, and explains how these systems are improving in terms of efficiency, energy consumption, and suitability for different climates. This review compares the performance, limitations, and deployment readiness of four major AWH classes: condensation-based systems that cool air to condense water vapor, sorption-based systems that use desiccant materials to absorb and release water, radiative cooling systems that use heat loss to the night sky to form dew, and hybrid systems that combine multiple approaches to improve performance. New materials such as metal-organic frameworks (MOFs), hygroscopic polymers, and phase-change materials have increased the ability of Atmospheric Water Generator (AWG) devices to extract water even in low-humidity environments, while also reducing energy needs. Solar power and other renewable energy sources are being used to make AWH systems more environmentally friendly and completely off-grid. Distinguishing itself from existing literature primarily focused on laboratory-scale material science, this paper presents a holistic, post-2020 synthesis of Atmospheric Water Harvesting (AWH) that prioritizes system-level operationality. This study integrates technical performance, environmental adaptability, and empirical benchmarking of Atmospheric Water Generators (AWGs) tested under real climatic conditions. Furthermore, it validates the transition from lab to field by including microbial safety benchmarks and evaluating decentralized, sustainable water security. This paper also highlighted case study of a solar-powered TEC-AWG system that demonstrated promising energy to water conversion and met basic microbial safety benchmarks. The water collected met drinking standards based on bacterial testing. Although AWH technologies are improving, challenges such as high costs, the need for thermal regeneration, and integration with other systems still exist. The review emphasizes AWH's relevance for off-grid, arid, and disaster-prone regions, and discusses pathways for commercial scaling. Moreover, this review concludes by highlighting future research areas such as advanced control using machine learning, use of waste heat, and development of durable and low-cost materials.</p>
+                </details>
                 <div class="mt-auto flex flex-wrap items-center gap-2 pt-5">
                   <a href="https://doi.org/10.1016/j.applthermaleng.2026.132073" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 font-mono text-xs text-slate-700 hover:border-accent hover:text-accent transition">DOI 10.1016/j.applthermaleng.2026.132073</a>
                 </div>
@@ -416,6 +432,13 @@
                 <p class="mt-2 text-sm"><span class="me">G. Saha</span>, F. Shahrin, F. H. Khan, M. M. Meshkat, A. K. M. A. M. Azad</p>
                 <p class="mt-1 text-sm italic text-slate-700">PLOS ONE, vol. 20, no. 3, e0319268 · March 2025</p>
                 <p class="mt-3 text-[15px]">Landsat-8 NDVI/NDSI mapping with LSTM forecasting, an ESP32 soil unit with Random Forest crop prediction (97.35%), and solar fuzzy-logic irrigation using ~70% less water.</p>
+                <details class="group mt-3">
+                  <summary class="inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <svg class="h-3.5 w-3.5 transition-transform group-open:rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    Abstract
+                  </summary>
+                  <p class="mt-2 rounded-lg border border-line bg-ash/70 p-4 text-[14.5px] leading-relaxed text-zinc-700">As the world population is increasing day by day, so is the need for more advanced automated precision agriculture to meet the increasing demands for food while decreasing labor work and saving water for crops. Recently, there have been many studies done in this field, but very few discuss implementing smart technologies to present a combined sustainable farming system. In this article, we present a complete integrated design of a smart IoT-based suitable agricultural land and crop selection, along with an irrigation system using agricultural mapping, machine learning, and fuzzy logic for precision agriculture. Multi-spectral band images from Landsat-8 satellite images of a chosen land are employed from USGS Earth Resources Observation and Science (EROS) Center for extracting indices that are used for agricultural analysis, determining the vegetation index, water index, and salinity index of that land using K-means. Furthermore, crop yield is predicted using Linear Regression and Random Forest, achieving accuracies of 93.49% and 95.87%, respectively, while using RMSE (Root Mean Squared Error) as the loss function. The LSTM model is used for healthy vegetation area forecasting highlighting the changes of the vegetation area over time. Such analysis helps to decide whether that land is suitable for farming or not. Multiple soil-parameter measuring sensors are used to identify suitable crop and fertilizer requirements for that land using IoT and machine learning. The ML model-based crop prediction showed 97.35% accuracy utilizing random forest algorithm. Finally, a fuzzy logic-based solar-powered irrigation system is used to monitor the water requirements of those crops and irrigate them according to their needs. The experimental results demonstrated that fuzzy logic has faster calibration rate of 66.23% and helps to save around 61% water in comparison to average logic algorithm. The implementation of a fuzzy logic algorithm significantly optimized water usage compared to traditional manual irrigation methods. These findings highlight the effectiveness of advanced computational techniques in enhancing agricultural practices and resource management.</p>
+                </details>
                 <div class="mt-auto flex flex-wrap items-center gap-2 pt-5">
                   <a href="https://doi.org/10.1371/journal.pone.0319268" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 font-mono text-xs text-slate-700 hover:border-accent hover:text-accent transition">DOI 10.1371/journal.pone.0319268</a>
                   <a href="https://doi.org/10.6084/m9.figshare.28120901" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-xs text-slate-700 hover:border-accent hover:text-accent transition">Open data (figshare)</a>
@@ -448,6 +471,13 @@
                 <p class="mt-2 text-sm"><span class="me">G. Saha</span>, A. K. M. A. M. Azad</p>
                 <p class="mt-1 text-sm italic text-slate-700">Energy Reports, vol. 12, pp. 1693–1709 · December 2024</p>
                 <p class="mt-3 text-[15px]">Design guide for off-grid PV refrigerators: linear DC compressors, R-600a, 12/24 V variable-speed drives, PCM panel cooling and MPPT/ANN control.</p>
+                <details class="group mt-3">
+                  <summary class="inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <svg class="h-3.5 w-3.5 transition-transform group-open:rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    Abstract
+                  </summary>
+                  <p class="mt-2 rounded-lg border border-line bg-ash/70 p-4 text-[14.5px] leading-relaxed text-zinc-700">The combination of refrigeration systems and solar photovoltaic (PV) technology has become a viable alternative to tackle the difficulties caused by electricity limitations, especially in areas with restricted grid connectivity. This review article compiles many studies that aim to improve the efficiency, coefficient of performance (COP), and decrease the power consumption of solar PV-powered refrigeration systems. A thorough investigation is conducted to examine several factors, such as the choice of appropriate refrigerants, compressor architecture, and the incorporation of phase change materials (PCMs). By analyzing vapor compression refrigeration systems (VCRS), the review highlights how different compressor types (e.g., reciprocating, rotary, and linear compressors) affect the COP and energy consumption. The properties and performance of various refrigerants are compared to identify the most efficient and environmentally friendly options. The application of PCM is explored, detailing its impact on maintaining optimal PV panel temperatures and improving overall system efficiency. In addition, several control strategies and suitable optimizers are covered to guarantee the best possible performance of the system. The results highlight the usage of solar PV technology to fulfill cooling requirements, thus providing a sustainable and financially feasible alternative in off-grid and remote areas. Moreover, the knowledge obtained from this study is expected to direct future research efforts toward creating PV-based solar refrigeration systems that are more effective, environmentally friendly, and operationally optimized.</p>
+                </details>
                 <div class="mt-auto flex flex-wrap items-center gap-2 pt-5">
                   <a href="https://doi.org/10.1016/j.egyr.2024.07.046" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 font-mono text-xs text-slate-700 hover:border-accent hover:text-accent transition">DOI 10.1016/j.egyr.2024.07.046</a>
                 </div>
@@ -474,6 +504,13 @@
               <p class="mt-2 text-sm">F. A. Nafis, S. S. Alvi, S. T. S. Rafid, N. Akib, A. J. Anonna, <span class="me">G. Saha</span></p>
               <p class="mt-1 text-sm italic text-slate-700">Int. Conf. on Electrical, Computer and Communication Engineering (ECCE), CUET, Chattogram, Bangladesh</p>
               <p class="mt-3 text-sm text-zinc-500">A* routing with PD control for a medicine-delivery robot: 30% better performance at 0.15 m/s.</p>
+                <details class="group mt-3">
+                  <summary class="inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <svg class="h-3.5 w-3.5 transition-transform group-open:rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    Abstract
+                  </summary>
+                  <p class="mt-2 rounded-lg border border-line bg-ash/70 p-4 text-[14.5px] leading-relaxed text-zinc-700">Healthcare institutes such as hospitals often face a shortage of caregivers and a high workload that affects the efficiency and quality of care. This paper addresses such problems by implementing a prototype LFR model for automated medicine delivery systems in hospital environments. The system uses IR sensor and sonar sensor for complex path navigation. To address challenges with path retention of LFRs, the A* algorithm is utilized for optimized route selection, while a Proportional-Derivative (PD) controller ensures smooth navigation and stability at higher speed. A simulation was carried out in MATLAB to evaluate the effectiveness of the PD controller for a designed path. Furthermore, the practical test revealed the boost in system performance by 30% with a speed of 0.15 m / s using the PD controller, which is a significant improvement over the system without the PD controller. An interactive GUI was designed for controlling the entire system using Python Tkinter. For security purposes, fingerprint unlock feature has been integrated which increases reliability of the overall system. This research demonstrates that the proposed LFR system offers an efficient, scalable solution to enhance hospital medication delivery and reduce caregiver workload.</p>
+                </details>
               <a href="https://doi.org/10.1109/ECCE64574.2025.11013144" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/ECCE64574.2025.11013144 ↗</a>
             </article>
 
@@ -486,6 +523,13 @@
               <p class="mt-2 text-sm">S. S. Alvi, F. A. Nafis, N. Akib, S. T. S. Rafid, A. J. Anonna, <span class="me">G. Saha</span></p>
               <p class="mt-1 text-sm italic text-slate-700">Int. Conf. on Electrical, Computer and Communication Engineering (ECCE), CUET, Chattogram, Bangladesh</p>
               <p class="mt-3 text-sm text-zinc-500">New 5,750-message Bengali SMS dataset; Naïve Bayes + XGBoost ensemble reaches 98.61% test accuracy.</p>
+                <details class="group mt-3">
+                  <summary class="inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <svg class="h-3.5 w-3.5 transition-transform group-open:rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    Abstract
+                  </summary>
+                  <p class="mt-2 rounded-lg border border-line bg-ash/70 p-4 text-[14.5px] leading-relaxed text-zinc-700">Unwanted SMS messages have become a significant nuisance in Bangladesh, making spam SMS a major problem. Detecting spam SMS in Bengali is particularly challenging due to the lack of datasets and focus in this area. This paper addresses this gap by proposing an ensemble method for detecting Bengali spam SMS using machine learning. We developed a comprehensive dataset with 5750 SMS texts, employing a user data collection method consisting of Bengali SMS messages, including legitimate and spam samples. We evaluated ten different machine learning algorithms on this dataset and evaluated the models. Our approach combines Multinomial Naïve Bayes and XGBoost algorithms utilizing voting and stacking ensemble methods. Our proposed model achieved a testing accuracy rate of 98.61%. This metric demonstrates the effectiveness of our ensemble approach in identifying spam SMS in Bengali. The results suggest that the combination of multiple classifiers can significantly enhance the accuracy of spam detection compared to individual classifiers.</p>
+                </details>
               <a href="https://doi.org/10.1109/ECCE64574.2025.11013231" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/ECCE64574.2025.11013231 ↗</a>
             </article>
 
@@ -498,6 +542,13 @@
               <p class="mt-2 text-sm">F. A. Nafis, N. Akib, <span class="me">G. Saha</span>, S. S. Alvi, M. I. A. Anik, A. J. Anonna</p>
               <p class="mt-1 text-sm italic text-slate-700">27th Int. Conf. on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, pp. 3182–3187</p>
               <p class="mt-3 text-sm text-zinc-500">Compact CNN for low-power fire detection at the edge, 96.48% test accuracy.</p>
+                <details class="group mt-3">
+                  <summary class="inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <svg class="h-3.5 w-3.5 transition-transform group-open:rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    Abstract
+                  </summary>
+                  <p class="mt-2 rounded-lg border border-line bg-ash/70 p-4 text-[14.5px] leading-relaxed text-zinc-700">Fire hazards have been a source of huge losses in households, industries, and public places. The conventional fire safety system integrates embedded systems such as sensors and microcontrollers to alert users. Recent studies present image processing-based fire detection with high power-consuming microprocessors. As the system needs to operate continuously to monitor any possible fire hazard, this leads to excessive energy consumption and creates heating issues in system hardware. In this paper, we present an energy-efficient fire detection system combining embedded systems, IoT, and deep learning-based algorithms. Additionally, an enhanced deep learning algorithm utilizing CNN architecture is proposed, reducing model size and complexity for faster operation in resource-constrained devices. Our proposed model achieved a testing accuracy of 96.48%, a pruned model accuracy of 88% with a quantized model size of 1.8 MB. Additionally, the system demonstrated a model inference time of 1.9 mS while consuming an average power of 5.3 W.</p>
+                </details>
               <a href="https://doi.org/10.1109/ICCIT64611.2024.11021729" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/ICCIT64611.2024.11021729 ↗</a>
             </article>
 
@@ -510,6 +561,13 @@
               <p class="mt-2 text-sm"><span class="me">G. Saha</span>, S. H. Suvo, F. T. Tonmoy, J. B. Asad, M. T. Imran, A. K. M. A. M. Azad</p>
               <p class="mt-1 text-sm italic text-slate-700">13th IEEE Int. Conf. on Communication Systems and Network Technologies (CSNT), Jabalpur, India, pp. 1190–1196</p>
               <p class="mt-3 text-sm text-zinc-500">Portable NPK, pH and moisture sensing with cloud ML for crop and fertilizer advice.</p>
+                <details class="group mt-3">
+                  <summary class="inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <svg class="h-3.5 w-3.5 transition-transform group-open:rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    Abstract
+                  </summary>
+                  <p class="mt-2 rounded-lg border border-line bg-ash/70 p-4 text-[14.5px] leading-relaxed text-zinc-700">This paper represents the design of a portable and IoT based device for monitoring nitrogen, phosphorus, potassium, pH, and moisture of soil, along with surrounding temperature and humidity, for crops and fertilizer recommendation. The idea and execution of a wireless, portable system for assessing soil quality, recommending the optimal amount of fertilizer, and suggesting appropriate crops depending on the soil conditions are the main goals of this research project. The system is designed to have a user-friendly interface. It uses a cloud-based platform for analyzing data and implementation of machine learning models. Multiple classification-based machine learning algorithms are compared to gain better accuracy of the system. The results of the system are validated using different samples of both indoor and outdoor environments. This cost-effective design, which includes monitoring of seven parameters necessary for crop cultivation along with crop recommendation feature and fertilizer suggestion, makes it desirable for agroindustry.</p>
+                </details>
               <a href="https://doi.org/10.1109/CSNT60213.2024.10545921" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/CSNT60213.2024.10545921 ↗</a>
             </article>
 
@@ -522,6 +580,13 @@
               <p class="mt-2 text-sm">M. A. H. Faiyaz, <span class="me">G. Saha</span>, S. H. Suvo, S. T. S. Rafid</p>
               <p class="mt-1 text-sm italic text-slate-700">13th IEEE Int. Conf. on Communication Systems and Network Technologies (CSNT), Jabalpur, India, pp. 1330–1335</p>
               <p class="mt-3 text-sm text-zinc-500">HOMER-optimized 170 kW solar microgrid for a 100 m³/day RO plant, avoiding ~100 t of CO₂.</p>
+                <details class="group mt-3">
+                  <summary class="inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <svg class="h-3.5 w-3.5 transition-transform group-open:rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    Abstract
+                  </summary>
+                  <p class="mt-2 rounded-lg border border-line bg-ash/70 p-4 text-[14.5px] leading-relaxed text-zinc-700">The scarcity of drinking water is a threat to the survival of any living being. The sea is the largest source of water, yet this source remains unutilized due to salinity. Production of drinking water from sea water using reverse osmosis (RO) desalination is viable using modern technology. This paper proposes a solar powered microgrid system for desalination plants with a capacity of 100 cubic meter per day drinking water located in Noakhali. The optimal solution for microgrid design is based on the criteria of energy costs, meeting demand requirements, and limiting excess electricity, utilizing HOMER. The optimal design includes 170 kW of solar panels, meeting the target energy demand for the RO plant. The predicted reduction of around 100 tons of carbon dioxide emissions by the proposed microgrid has a favorable effect on the environment.</p>
+                </details>
               <a href="https://doi.org/10.1109/CSNT60213.2024.10546168" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/CSNT60213.2024.10546168 ↗</a>
             </article>
 
@@ -534,6 +599,13 @@
               <p class="mt-2 text-sm">S. H. Suvo, Nur-E-Tasniya, T. U. Wara, <span class="me">G. Saha</span>, Z. Alam, M. Islam</p>
               <p class="mt-1 text-sm italic text-slate-700">6th Int. Conf. on Electrical Engineering and Information &amp; Communication Technology (ICEEICT), Dhaka, Bangladesh, pp. 1146–1151</p>
               <p class="mt-3 text-sm text-zinc-500">A 2.9 MW floating PV plant on 10% of the lake could meet ~28.8% of local demand.</p>
+                <details class="group mt-3">
+                  <summary class="inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <svg class="h-3.5 w-3.5 transition-transform group-open:rotate-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    Abstract
+                  </summary>
+                  <p class="mt-2 rounded-lg border border-line bg-ash/70 p-4 text-[14.5px] leading-relaxed text-zinc-700">The paper explores the prospects of integration of floating solar photovoltaic (FSPV) plants as a sustainable solution for urban area considering the Hatirjheel lake in Bangladesh. The analysis focuses on Hatirjheel, the largest artificial water body in Dhaka, as a potential location for FSPV installation. A developed model is used to assess the impact of cloud coverage, sun irradiance, and along with the total photovoltaic energy outcome. The proposed FSPV plant of 2.9 MW with an annual energy output of 25.19 GWh converging at the nearest Grid Substation aims to fulfill 28.81% of its local energy needs. Considering only 10% of the waterbody 1.22×10<sup>5</sup> m<sup>2</sup>, without intervening the water taxi routes. This analysis also includes the floating structures, wiring systems, anchoring, and mooring systems, and explores shadow distances and inter-row distances of PV panels to maximize energy output.</p>
+                </details>
               <a href="https://doi.org/10.1109/ICEEICT62016.2024.10534469" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/ICEEICT62016.2024.10534469 ↗</a>
             </article>
           </div>
@@ -713,7 +785,7 @@
       <div class="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-16 sm:px-6 md:flex-row md:items-center md:justify-between">
         <div class="reveal max-w-xl">
           <p class="font-mono text-xs uppercase tracking-[0.18em] text-indigo-300">05 · Contact</p>
-          <h2 class="mt-3 font-serif text-4xl tracking-tight text-white">Get in touch</h2>
+          <h2 class="mt-3 font-serif text-4xl tracking-tight text-white">Open to collaboration</h2>
           <p class="mt-3">I'm currently looking for MS/PhD opportunities and would love to hear from labs working on embedded systems, smart energy, IoT sensing or assistive technology. If you have a question about my work or an idea we could explore together, feel free to email me.</p>
         </div>
         <div class="reveal flex flex-col gap-3 sm:flex-row md:flex-col">
@@ -929,7 +1001,7 @@
     /* ---------- Google Scholar metrics ----------
        Reads data/scholar.json (edit by hand, or let the optional GitHub Action refresh it).
        Falls back to the values below if the file can't be loaded (e.g. opening index.html from disk). */
-    const SCHOLAR_FALLBACK = { citations: null, h_index: null, i10_index: null, updated: null };
+    const SCHOLAR_FALLBACK = { citations: 117, h_index: 3, i10_index: 3, updated: '2026-10-26' };
     const fmt = n => Number(n).toLocaleString('en-US');
     const countUp = (el, to) => {
       if (reduceMotion || to < 5) { el.textContent = fmt(to); return; }
