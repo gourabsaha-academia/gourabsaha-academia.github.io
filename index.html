@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gourab Saha · EEE Researcher, BRAC University</title>
+  <meta name="description" content="Gourab Saha, Electrical and Electronic Engineering researcher at BRAC University, Dhaka. Renewable energy systems, IoT and precision agriculture, atmospheric water harvesting, and brain-computer interfaces for assistive mobility." />
+  <meta name="author" content="Gourab Saha" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Gourab Saha · EEE Researcher" />
+  <meta property="og:description" content="Renewable energy, IoT sensing, precision agriculture and assistive biomedical technology. BRAC University, Dhaka." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta name="theme-color" content="#f8fafc" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e293b'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23fff' text-anchor='middle'%3EGS%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS (Play CDN) -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+          },
+          colors: {
+            canvas: '#f8fafc',
+            ash: '#f4f4f5',
+            line: '#e2e8f0',
+            navy: { DEFAULT: '#1e293b', soft: '#334155' },
+            accent: { DEFAULT: '#3f3d9e', soft: '#eef0fb', line: '#c9cdf2' },
+          },
+          boxShadow: {
+            card: '0 1px 2px rgba(15,23,42,.04), 0 4px 16px -6px rgba(15,23,42,.08)',
+            lift: '0 2px 4px rgba(15,23,42,.05), 0 16px 32px -12px rgba(15,23,42,.18)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root { --nav-h: 64px; }
+    html { scroll-padding-top: calc(var(--nav-h) + 16px); }
+    body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    .me { color: #1e293b; font-weight: 600; text-decoration: underline; text-decoration-color: #9fa4e6; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+    .nav-link.active { color: #1e293b; }
+    .nav-link.active::after { transform: scaleX(1); }
+    .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: #3f3d9e; transform: scaleX(0); transition: transform .25s ease; border-radius: 2px; }
+    .chip-filter[aria-pressed="true"] { background: #1e293b; color: #fff; border-color: #1e293b; }
+    .photo-glow { position: relative; }
+    .photo-glow::before { content: ''; position: absolute; inset: -10px; border-radius: 2rem; background: conic-gradient(from 140deg, #c7d2fe, #e2e8f0, #ddd6fe, #e2e8f0, #c7d2fe); filter: blur(18px); opacity: .7; z-index: -1; }
+    .poster-thumb img { transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+    .poster-thumb:hover img, .poster-thumb:focus-visible img { transform: scale(1.035); }
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    #lightbox.open { display: flex; }
+    #lightbox .lb-stage.zoomed { overflow: auto; cursor: zoom-out; align-items: flex-start; }
+    #lightbox .lb-stage.zoomed img { max-height: none; max-width: none; width: min(1800px, 160vw); }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { scrollbar-width: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .poster-thumb img { transition: none; }
+    }
+  </style>
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gourab Saha",
+    "jobTitle": "Research Assistant, Electrical and Electronic Engineering",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "BRAC University", "address": "Dhaka, Bangladesh" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "BRAC University" },
+    "email": "mailto:gourabsaha.aca@gmail.com",
+    "image": "assets/profile.jpg",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=2IIG2FcAAAAJ",
+      "https://www.linkedin.com/in/gourab-saha1/",
+      "https://www.researchgate.net/profile/Gourab-Saha-23"
+    ],
+    "knowsAbout": ["Renewable energy systems", "Microgrids", "Precision agriculture", "Internet of Things", "Atmospheric water harvesting", "Brain-computer interfaces"]
+  }
+  </script>
+</head>
+
+<body class="bg-canvas text-zinc-600 font-sans leading-relaxed">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-card text-navy">Skip to content</a>
+
+  <!-- ========================= NAVIGATION ========================= -->
+  <header id="top" class="sticky top-0 z-50 border-b border-line/80 bg-canvas/75 backdrop-blur-md supports-[backdrop-filter]:bg-canvas/65">
+    <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6" aria-label="Primary">
+      <a href="#about" class="flex items-center gap-2.5 group">
+        <span class="grid h-8 w-8 place-items-center rounded-lg bg-navy font-serif text-[15px] text-white">GS</span>
+        <span class="font-semibold tracking-tight text-slate-900 group-hover:text-accent transition-colors">Gourab Saha</span>
+      </a>
+
+      <ul class="hidden items-center gap-7 text-sm font-medium text-zinc-500 md:flex">
+        <li><a class="nav-link relative hover:text-slate-900 transition-colors" href="#about">About</a></li>
+        <li><a class="nav-link relative hover:text-slate-900 transition-colors" href="#research">Research</a></li>
+        <li><a class="nav-link relative hover:text-slate-900 transition-colors" href="#publications">Publications</a></li>
+        <li><a class="nav-link relative hover:text-slate-900 transition-colors" href="#service">Service</a></li>
+        <li><a class="nav-link relative hover:text-slate-900 transition-colors" href="#experience">Experience</a></li>
+        <li><a class="nav-link relative hover:text-slate-900 transition-colors" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2">
+        <a href="assets/Gourab_Saha_CV.pdf" target="_blank" rel="noopener"
+           class="hidden sm:inline-flex items-center gap-1.5 rounded-lg bg-navy px-3.5 py-2 text-sm font-medium text-white shadow-sm hover:bg-navy-soft transition-colors">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 15h6M9 18h4"/></svg>
+          CV (PDF)
+        </a>
+        <button id="menuBtn" type="button" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line bg-white text-navy" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div id="drawerBackdrop" class="fixed inset-0 z-[60] hidden bg-slate-900/30 backdrop-blur-sm md:hidden" aria-hidden="true"></div>
+  <aside id="drawer" class="fixed inset-y-0 right-0 z-[61] w-72 max-w-[85vw] translate-x-full bg-white shadow-lift transition-transform duration-300 md:hidden" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="flex h-16 items-center justify-between border-b border-line px-5">
+      <span class="font-semibold text-slate-900">Menu</span>
+      <button id="drawerClose" type="button" class="inline-flex h-9 w-9 items-center justify-center rounded-lg text-zinc-500 hover:bg-ash" aria-label="Close menu">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ul class="flex flex-col p-3 text-[15px] font-medium text-slate-700">
+      <li><a class="drawer-link block rounded-lg px-3 py-2.5 hover:bg-ash" href="#about">About</a></li>
+      <li><a class="drawer-link block rounded-lg px-3 py-2.5 hover:bg-ash" href="#research">Research</a></li>
+      <li><a class="drawer-link block rounded-lg px-3 py-2.5 hover:bg-ash" href="#publications">Publications</a></li>
+      <li><a class="drawer-link block rounded-lg px-3 py-2.5 hover:bg-ash" href="#service">Peer review</a></li>
+      <li><a class="drawer-link block rounded-lg px-3 py-2.5 hover:bg-ash" href="#experience">Experience</a></li>
+      <li><a class="drawer-link block rounded-lg px-3 py-2.5 hover:bg-ash" href="#contact">Contact</a></li>
+    </ul>
+    <div class="px-5 pt-2">
+      <a href="assets/Gourab_Saha_CV.pdf" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 rounded-lg bg-navy px-4 py-2.5 text-sm font-medium text-white">Download CV (PDF)</a>
+    </div>
+  </aside>
+
+  <main id="main">
+
+    <!-- ========================= HERO ========================= -->
+    <section id="about" class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_50%_at_80%_0%,#eef0fb_0%,transparent_70%)]"></div>
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 pb-16 pt-12 sm:px-6 md:pt-20 lg:grid-cols-[1fr_360px] lg:gap-16">
+
+        <div class="order-2 lg:order-1">
+          <p class="font-mono text-xs uppercase tracking-[0.18em] text-accent">Electrical &amp; Electronic Engineering · Researcher &amp; Lecturer</p>
+          <h1 class="mt-4 font-serif text-5xl font-medium leading-[1.05] tracking-tight text-slate-900 sm:text-6xl">Gourab Saha</h1>
+          <p class="mt-4 text-[17px] text-slate-700">
+            Research Assistant, Control &amp; Applications Research Centre (CARC)<br class="hidden sm:block" />
+            Department of EEE, <span class="font-medium text-slate-900">BRAC University</span>, Dhaka, Bangladesh
+          </p>
+          <p class="mt-1 text-sm text-zinc-500">Former Adjunct Lecturer, Dept. of EEE, BRAC University (2025–2026)</p>
+
+          <p class="mt-6 max-w-2xl text-[16.5px] leading-relaxed">
+            I build energy and sensing systems that have to work outside the lab: off-grid water and cold storage,
+            data-driven farming for smallholders, and blink-controlled mobility for people with severe motor impairment.
+            My work spans renewable energy optimization, IoT sensing and biomedical signal processing.
+            I am first author of three Q1 journal articles and a peer reviewer for two international journals.
+          </p>
+
+          <!-- Profile badges -->
+          <div class="mt-7 flex flex-wrap items-center gap-2.5">
+            <a href="https://scholar.google.com/citations?user=2IIG2FcAAAAJ&hl=en" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-slate-800 shadow-card hover:border-accent-line hover:text-accent transition">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+              Google Scholar
+            </a>
+            <a href="https://www.researchgate.net/profile/Gourab-Saha-23" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-slate-800 shadow-card hover:border-accent-line hover:text-accent transition">
+              <span class="grid h-4 w-4 place-items-center rounded-[4px] bg-current"><span class="text-[8px] font-bold leading-none text-white">R<sup class="text-[5px]">G</sup></span></span>
+              ResearchGate
+            </a>
+            <a href="https://www.linkedin.com/in/gourab-saha1/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-slate-800 shadow-card hover:border-accent-line hover:text-accent transition">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:gourabsaha.aca@gmail.com" class="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-slate-800 shadow-card hover:border-accent-line hover:text-accent transition">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Email
+            </a>
+          </div>
+
+          <!-- Highlighted citation badge -->
+          <a id="citeBadge" href="https://scholar.google.com/citations?user=2IIG2FcAAAAJ&hl=en" target="_blank" rel="noopener"
+             class="mt-5 inline-flex items-center gap-3 rounded-xl border border-accent-line bg-accent-soft py-2 pl-2 pr-4 text-sm text-navy hover:shadow-card transition">
+            <span class="relative flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h4v4H7zM13 7h4v4h-4z"/><path d="M11 11c0 3-1.5 5-4 6M17 11c0 3-1.5 5-4 6"/></svg>
+            </span>
+            <span><span class="font-semibold" data-scholar="citations-inline">—</span> citations on Google Scholar</span>
+            <svg class="h-4 w-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+
+          <!-- Quick facts -->
+          <dl class="mt-10 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-4">
+            <div class="bg-white p-4"><dt class="text-xs text-zinc-500">Q1 journal articles</dt><dd class="mt-1 font-serif text-3xl text-slate-900">3</dd><dd class="text-xs text-zinc-500">all first author</dd></div>
+            <div class="bg-white p-4"><dt class="text-xs text-zinc-500">Conference papers</dt><dd class="mt-1 font-serif text-3xl text-slate-900">6</dd><dd class="text-xs text-zinc-500">IEEE proceedings</dd></div>
+            <div class="bg-white p-4"><dt class="text-xs text-zinc-500">Under review</dt><dd class="mt-1 font-serif text-3xl text-slate-900">2</dd><dd class="text-xs text-zinc-500">Heliyon, Energies</dd></div>
+            <div class="bg-white p-4"><dt class="text-xs text-zinc-500">Journal reviewer</dt><dd class="mt-1 font-serif text-3xl text-slate-900">2</dd><dd class="text-xs text-zinc-500">since 2025</dd></div>
+          </dl>
+        </div>
+
+        <!-- Photo + Scholar metrics -->
+        <div class="contents lg:order-2 lg:flex lg:flex-col lg:gap-6">
+          <div class="photo-glow isolate order-1 mx-auto w-48 sm:w-60 lg:order-none lg:w-full">
+            <div class="overflow-hidden rounded-[1.75rem] border border-white bg-white p-2 shadow-lift">
+              <div class="relative aspect-[4/5] overflow-hidden rounded-[1.35rem] bg-ash">
+                <img src="assets/profile.jpg" alt="Portrait of Gourab Saha" width="472" height="591" class="h-full w-full object-cover object-top"
+                     onerror="this.remove(); document.getElementById('photoFallback').classList.remove('hidden');" />
+                <div id="photoFallback" class="hidden absolute inset-0 grid place-items-center bg-gradient-to-br from-slate-100 to-slate-200">
+                  <span class="font-serif text-6xl text-slate-400">GS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scholar stats card -->
+          <div id="scholar" class="order-3 w-full rounded-2xl lg:order-none sm:max-w-md border border-line bg-white p-5 shadow-card lg:max-w-none">
+            <div class="flex items-center justify-between">
+              <h2 class="text-sm font-semibold text-slate-900">Google Scholar metrics</h2>
+              <span id="scholarStatus" class="font-mono text-[10.5px] uppercase tracking-wider text-zinc-400">loading…</span>
+            </div>
+            <div class="mt-4 grid grid-cols-3 divide-x divide-line text-center">
+              <div><div class="font-serif text-3xl text-slate-900" data-scholar="citations">—</div><div class="mt-0.5 text-xs text-zinc-500">Citations</div></div>
+              <div><div class="font-serif text-3xl text-slate-900" data-scholar="h_index">—</div><div class="mt-0.5 text-xs text-zinc-500">h-index</div></div>
+              <div><div class="font-serif text-3xl text-slate-900" data-scholar="i10_index">—</div><div class="mt-0.5 text-xs text-zinc-500">i10-index</div></div>
+            </div>
+            <a href="https://scholar.google.com/citations?user=2IIG2FcAAAAJ&hl=en" target="_blank" rel="noopener" class="mt-4 flex items-center justify-between rounded-lg bg-ash px-3 py-2 text-xs font-medium text-navy hover:bg-accent-soft transition-colors">
+              <span id="scholarUpdated">See live profile</span>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= RESEARCH INTERESTS ========================= -->
+    <section id="research" class="border-t border-line bg-white/60">
+      <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+        <div class="reveal max-w-2xl">
+          <p class="font-mono text-xs uppercase tracking-[0.18em] text-accent">01 · Research interests</p>
+          <h2 class="mt-3 font-serif text-4xl tracking-tight text-slate-900">Where I work</h2>
+          <p class="mt-3">Six threads, each backed by published or ongoing work.</p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- card -->
+          <article class="reveal group rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift hover:-translate-y-0.5 transition">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-soft text-accent">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-slate-900">Power Systems &amp; Microgrids</h3>
+            <p class="mt-2 text-[15px]">Optimal sizing and demand-side management for hybrid PV–wind–diesel–battery microgrids with HOMER Pro, PSO, GA and DE.</p>
+            <p class="mt-4 font-mono text-[11px] text-zinc-400">Energies (under review) · CSNT 2024</p>
+          </article>
+
+          <article class="reveal group rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift hover:-translate-y-0.5 transition">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-soft text-accent">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-slate-900">Solar Energy &amp; Thermal Systems</h3>
+            <p class="mt-2 text-[15px]">Solar PV-powered refrigeration, floating PV and atmospheric water harvesting for off-grid and water-stressed regions.</p>
+            <p class="mt-4 font-mono text-[11px] text-zinc-400">Applied Thermal Eng. 2026 · Energy Reports 2024</p>
+          </article>
+
+          <article class="reveal group rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift hover:-translate-y-0.5 transition">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-soft text-accent">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 20h10M12 20v-8"/><path d="M12 12C12 7 8 5 4 5c0 4 3 7 8 7zM12 12c0-4 3-7 8-7 0 4-3 7-8 7z"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-slate-900">Precision Agriculture &amp; IoT</h3>
+            <p class="mt-2 text-[15px]">Satellite land mapping, soil sensing with ML crop and fertilizer advice, and solar fuzzy-logic irrigation.</p>
+            <p class="mt-4 font-mono text-[11px] text-zinc-400">PLOS ONE 2025 · CSNT 2024</p>
+          </article>
+
+          <article class="reveal group rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift hover:-translate-y-0.5 transition">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-soft text-accent">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h3l2-5 3 10 3-7 2 2h7"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-slate-900">Assistive Biomedical Technology</h3>
+            <p class="mt-2 text-[15px]">Brain–computer interfaced wheelchairs: real-time EMG/EEG blink-intent detection and scanning control for quadriplegia patients.</p>
+            <p class="mt-4 font-mono text-[11px] text-zinc-400">Heliyon (revision under review) · ongoing</p>
+          </article>
+
+          <article class="reveal group rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift hover:-translate-y-0.5 transition">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-soft text-accent">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-slate-900">Applied AI &amp; Edge Computing</h3>
+            <p class="mt-2 text-[15px]">Quantized deep learning on resource-constrained devices and ensemble ML for low-resource language data.</p>
+            <p class="mt-4 font-mono text-[11px] text-zinc-400">ICCIT 2024 · ECCE 2025</p>
+          </article>
+
+          <article class="reveal group rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift hover:-translate-y-0.5 transition">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-soft text-accent">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8 16 16 8"/><path d="M6 15.5V6h4M18 8.5V18h-4"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-slate-900">Control Systems &amp; Robotics</h3>
+            <p class="mt-2 text-[15px]">PD control and A* path planning for hospital logistics robots; fuzzy and embedded real-time control.</p>
+            <p class="mt-4 font-mono text-[11px] text-zinc-400">ECCE 2025</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= PUBLICATIONS ========================= -->
+    <section id="publications" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+        <div class="reveal flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div class="max-w-2xl">
+            <p class="font-mono text-xs uppercase tracking-[0.18em] text-accent">02 · Publications</p>
+            <h2 class="mt-3 font-serif text-4xl tracking-tight text-slate-900">Selected work</h2>
+            <p class="mt-3">Journal articles come with a one-page research poster. Click a poster to open it full size.</p>
+          </div>
+          <label class="relative block w-full md:w-72">
+            <span class="sr-only">Search publications</span>
+            <svg class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="pubSearch" type="search" placeholder="Search title, venue, keyword…" class="w-full rounded-lg border border-line bg-white py-2.5 pl-9 pr-3 text-sm text-slate-800 placeholder:text-zinc-400 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/15" />
+          </label>
+        </div>
+
+        <!-- Filters -->
+        <div class="reveal mt-8 flex flex-col gap-3">
+          <div class="hide-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 sm:mx-0 sm:flex-wrap sm:px-0" role="group" aria-label="Filter by type">
+            <button type="button" class="chip-filter shrink-0 rounded-full border border-line bg-white px-4 py-1.5 text-sm font-medium text-slate-700 hover:border-slate-400 transition" data-type="all" aria-pressed="true">All <span class="ml-1 opacity-60" data-count="all"></span></button>
+            <button type="button" class="chip-filter shrink-0 rounded-full border border-line bg-white px-4 py-1.5 text-sm font-medium text-slate-700 hover:border-slate-400 transition" data-type="journal" aria-pressed="false">Journal articles <span class="ml-1 opacity-60" data-count="journal"></span></button>
+            <button type="button" class="chip-filter shrink-0 rounded-full border border-line bg-white px-4 py-1.5 text-sm font-medium text-slate-700 hover:border-slate-400 transition" data-type="conference" aria-pressed="false">Conference papers <span class="ml-1 opacity-60" data-count="conference"></span></button>
+            <button type="button" class="chip-filter shrink-0 rounded-full border border-line bg-white px-4 py-1.5 text-sm font-medium text-slate-700 hover:border-slate-400 transition" data-type="review" aria-pressed="false">Under review <span class="ml-1 opacity-60" data-count="review"></span></button>
+          </div>
+          <div class="hide-scrollbar -mx-4 flex items-center gap-2 overflow-x-auto px-4 sm:mx-0 sm:flex-wrap sm:px-0" role="group" aria-label="Filter by topic">
+            <span class="shrink-0 font-mono text-[11px] uppercase tracking-wider text-zinc-400">Topic</span>
+            <button type="button" class="topic-filter shrink-0 rounded-md border border-transparent px-2.5 py-1 text-[13px] text-zinc-500 hover:text-slate-900 aria-pressed:border-line aria-pressed:bg-white aria-pressed:text-slate-900 aria-pressed:shadow-sm transition" data-topic="all" aria-pressed="true">All topics</button>
+            <button type="button" class="topic-filter shrink-0 rounded-md border border-transparent px-2.5 py-1 text-[13px] text-zinc-500 hover:text-slate-900 aria-pressed:border-line aria-pressed:bg-white aria-pressed:text-slate-900 aria-pressed:shadow-sm transition" data-topic="energy" aria-pressed="false">Energy &amp; power</button>
+            <button type="button" class="topic-filter shrink-0 rounded-md border border-transparent px-2.5 py-1 text-[13px] text-zinc-500 hover:text-slate-900 aria-pressed:border-line aria-pressed:bg-white aria-pressed:text-slate-900 aria-pressed:shadow-sm transition" data-topic="agri" aria-pressed="false">Agriculture &amp; IoT</button>
+            <button type="button" class="topic-filter shrink-0 rounded-md border border-transparent px-2.5 py-1 text-[13px] text-zinc-500 hover:text-slate-900 aria-pressed:border-line aria-pressed:bg-white aria-pressed:text-slate-900 aria-pressed:shadow-sm transition" data-topic="ai" aria-pressed="false">AI &amp; embedded</button>
+            <button type="button" class="topic-filter shrink-0 rounded-md border border-transparent px-2.5 py-1 text-[13px] text-zinc-500 hover:text-slate-900 aria-pressed:border-line aria-pressed:bg-white aria-pressed:text-slate-900 aria-pressed:shadow-sm transition" data-topic="bio" aria-pressed="false">Biomedical &amp; robotics</button>
+          </div>
+        </div>
+
+        <!-- ---------- A. Peer-reviewed journal articles ---------- -->
+        <div class="pub-group mt-12" data-group="journal">
+          <div class="flex items-baseline justify-between border-b border-line pb-3">
+            <h3 class="text-lg font-semibold text-slate-900">A · Peer-reviewed journal articles</h3>
+            <span class="font-mono text-xs text-zinc-400">Q1 · open access</span>
+          </div>
+
+          <div class="mt-6 grid gap-6">
+
+            <!-- Journal 1: AWH (paper1) -->
+            <article class="pub reveal grid overflow-hidden rounded-2xl border border-line bg-white shadow-card md:grid-cols-[220px_1fr]"
+                     data-type="journal" data-topic="energy" data-poster="1">
+              <button type="button" class="poster-thumb group relative block aspect-[16/10] md:aspect-[4/5] w-full overflow-hidden border-b border-line bg-ash md:border-b-0 md:border-r"
+                      data-lightbox="assets/posters/paper1.png" data-caption="From air to water: science, technology, and future of atmospheric water harvesting (AWH) · Applied Thermal Engineering, 2026"
+                      aria-label="Open poster: From air to water (AWH review)">
+                <img src="assets/posters/thumbs/paper1.webp" alt="Research poster for the atmospheric water harvesting review" loading="lazy" width="720" height="900" class="h-full w-full object-cover object-top"
+                     onerror="this.onerror=null; this.src='assets/posters/paper1.png'; this.addEventListener('error',()=>this.closest('.poster-thumb').classList.add('no-img'));" />
+                <span class="absolute inset-x-3 bottom-3 inline-flex items-center justify-center gap-1.5 rounded-lg bg-white/90 py-1.5 text-xs font-medium text-navy shadow backdrop-blur group-hover:bg-white">
+                  <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>View poster
+                </span>
+              </button>
+              <div class="flex flex-col p-6">
+                <div class="flex flex-wrap items-center gap-2 text-[11px] font-medium">
+                  <span class="rounded-md bg-navy px-2 py-0.5 text-white">Journal</span>
+                  <span class="rounded-md bg-accent-soft px-2 py-0.5 text-accent">First author</span>
+                  <span class="rounded-md border border-line px-2 py-0.5 text-zinc-500">Review · Open access</span>
+                  <span class="ml-auto font-mono text-zinc-400">2026</span>
+                </div>
+                <h4 class="mt-3 font-serif text-[22px] leading-snug text-slate-900">
+                  <a href="https://doi.org/10.1016/j.applthermaleng.2026.132073" target="_blank" rel="noopener" class="hover:text-accent transition-colors">From air to water: Science, technology, and future of atmospheric water harvesting (AWH)</a>
+                </h4>
+                <p class="mt-2 text-sm"><span class="me">G. Saha</span>, M. T. Imran, S. M. Shams, M. F. A. Khan, A. K. M. A. M. Azad, M. A. Imteaz</p>
+                <p class="mt-1 text-sm italic text-slate-700">Applied Thermal Engineering, vol. 302, Art. 132073 · Elsevier</p>
+                <p class="mt-3 text-[15px]">System-level review benchmarking four AWH pathways (condensation, sorption, radiative, hybrid) under real climates, with a solar TEC unit tested for microbial safety.</p>
+                <div class="mt-auto flex flex-wrap items-center gap-2 pt-5">
+                  <a href="https://doi.org/10.1016/j.applthermaleng.2026.132073" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 font-mono text-xs text-slate-700 hover:border-accent hover:text-accent transition">DOI 10.1016/j.applthermaleng.2026.132073</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Journal 2: PLOS ONE (paper3 poster) -->
+            <article class="pub reveal grid overflow-hidden rounded-2xl border border-line bg-white shadow-card md:grid-cols-[220px_1fr]"
+                     data-type="journal" data-topic="agri ai" data-poster="3">
+              <button type="button" class="poster-thumb group relative block aspect-[16/10] md:aspect-[4/5] w-full overflow-hidden border-b border-line bg-ash md:border-b-0 md:border-r"
+                      data-lightbox="assets/posters/paper3.png" data-caption="Smart IoT-driven precision agriculture: land mapping, crop prediction, and irrigation system · PLOS ONE, 2025"
+                      aria-label="Open poster: Smart IoT-driven precision agriculture">
+                <img src="assets/posters/thumbs/paper3.webp" alt="Research poster for the IoT precision agriculture paper" loading="lazy" width="720" height="900" class="h-full w-full object-cover object-top"
+                     onerror="this.onerror=null; this.src='assets/posters/paper3.png';" />
+                <span class="absolute inset-x-3 bottom-3 inline-flex items-center justify-center gap-1.5 rounded-lg bg-white/90 py-1.5 text-xs font-medium text-navy shadow backdrop-blur group-hover:bg-white">
+                  <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>View poster
+                </span>
+              </button>
+              <div class="flex flex-col p-6">
+                <div class="flex flex-wrap items-center gap-2 text-[11px] font-medium">
+                  <span class="rounded-md bg-navy px-2 py-0.5 text-white">Journal</span>
+                  <span class="rounded-md bg-accent-soft px-2 py-0.5 text-accent">First &amp; corresponding author</span>
+                  <span class="rounded-md border border-line px-2 py-0.5 text-zinc-500">Research article · Open access</span>
+                  <span class="ml-auto font-mono text-zinc-400">2025</span>
+                </div>
+                <h4 class="mt-3 font-serif text-[22px] leading-snug text-slate-900">
+                  <a href="https://doi.org/10.1371/journal.pone.0319268" target="_blank" rel="noopener" class="hover:text-accent transition-colors">Smart IoT-driven precision agriculture: Land mapping, crop prediction, and irrigation system</a>
+                </h4>
+                <p class="mt-2 text-sm"><span class="me">G. Saha</span>, F. Shahrin, F. H. Khan, M. M. Meshkat, A. K. M. A. M. Azad</p>
+                <p class="mt-1 text-sm italic text-slate-700">PLOS ONE, vol. 20, no. 3, e0319268 · March 2025</p>
+                <p class="mt-3 text-[15px]">Landsat-8 NDVI/NDSI mapping with LSTM forecasting, an ESP32 soil unit with Random Forest crop prediction (97.35%), and solar fuzzy-logic irrigation using ~70% less water.</p>
+                <div class="mt-auto flex flex-wrap items-center gap-2 pt-5">
+                  <a href="https://doi.org/10.1371/journal.pone.0319268" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 font-mono text-xs text-slate-700 hover:border-accent hover:text-accent transition">DOI 10.1371/journal.pone.0319268</a>
+                  <a href="https://doi.org/10.6084/m9.figshare.28120901" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-xs text-slate-700 hover:border-accent hover:text-accent transition">Open data (figshare)</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Journal 3: Energy Reports (paper2 poster) -->
+            <article class="pub reveal grid overflow-hidden rounded-2xl border border-line bg-white shadow-card md:grid-cols-[220px_1fr]"
+                     data-type="journal" data-topic="energy" data-poster="2">
+              <button type="button" class="poster-thumb group relative block aspect-[16/10] md:aspect-[4/5] w-full overflow-hidden border-b border-line bg-ash md:border-b-0 md:border-r"
+                      data-lightbox="assets/posters/paper2.png" data-caption="A review of advancements in solar PV-powered refrigeration · Energy Reports, 2024"
+                      aria-label="Open poster: Solar PV-powered refrigeration review">
+                <img src="assets/posters/thumbs/paper2.webp" alt="Research poster for the solar PV-powered refrigeration review" loading="lazy" width="720" height="900" class="h-full w-full object-cover object-top"
+                     onerror="this.onerror=null; this.src='assets/posters/paper2.png';" />
+                <span class="absolute inset-x-3 bottom-3 inline-flex items-center justify-center gap-1.5 rounded-lg bg-white/90 py-1.5 text-xs font-medium text-navy shadow backdrop-blur group-hover:bg-white">
+                  <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>View poster
+                </span>
+              </button>
+              <div class="flex flex-col p-6">
+                <div class="flex flex-wrap items-center gap-2 text-[11px] font-medium">
+                  <span class="rounded-md bg-navy px-2 py-0.5 text-white">Journal</span>
+                  <span class="rounded-md bg-accent-soft px-2 py-0.5 text-accent">First &amp; corresponding author</span>
+                  <span class="rounded-md border border-line px-2 py-0.5 text-zinc-500">Review · Open access</span>
+                  <span class="ml-auto font-mono text-zinc-400">2024</span>
+                </div>
+                <h4 class="mt-3 font-serif text-[22px] leading-snug text-slate-900">
+                  <a href="https://doi.org/10.1016/j.egyr.2024.07.046" target="_blank" rel="noopener" class="hover:text-accent transition-colors">A review of advancements in solar PV-powered refrigeration: Enhancing efficiency, sustainability, and operational optimization</a>
+                </h4>
+                <p class="mt-2 text-sm"><span class="me">G. Saha</span>, A. K. M. A. M. Azad</p>
+                <p class="mt-1 text-sm italic text-slate-700">Energy Reports, vol. 12, pp. 1693–1709 · December 2024</p>
+                <p class="mt-3 text-[15px]">Design guide for off-grid PV refrigerators: linear DC compressors, R-600a, 12/24 V variable-speed drives, PCM panel cooling and MPPT/ANN control.</p>
+                <div class="mt-auto flex flex-wrap items-center gap-2 pt-5">
+                  <a href="https://doi.org/10.1016/j.egyr.2024.07.046" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 font-mono text-xs text-slate-700 hover:border-accent hover:text-accent transition">DOI 10.1016/j.egyr.2024.07.046</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ---------- B. Conference proceedings ---------- -->
+        <div class="pub-group mt-16" data-group="conference">
+          <div class="flex items-baseline justify-between border-b border-line pb-3">
+            <h3 class="text-lg font-semibold text-slate-900">B · Conference proceedings</h3>
+            <span class="font-mono text-xs text-zinc-400">IEEE</span>
+          </div>
+
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+
+            <article class="pub reveal flex flex-col rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift transition" data-type="conference" data-topic="bio ai">
+              <div class="flex items-center justify-between gap-3 font-mono text-[11px]">
+                <span class="rounded-md border border-line bg-ash px-2 py-0.5 text-slate-700">ECCE 2025</span>
+                <span class="text-zinc-400">Feb 2025</span>
+              </div>
+              <h4 class="mt-3 text-[17px] font-semibold leading-snug text-slate-900">A reliable robotic solution for hospital logistics: Implementation of intelligent pathfinding and control strategy</h4>
+              <p class="mt-2 text-sm">F. A. Nafis, S. S. Alvi, S. T. S. Rafid, N. Akib, A. J. Anonna, <span class="me">G. Saha</span></p>
+              <p class="mt-1 text-sm italic text-slate-700">Int. Conf. on Electrical, Computer and Communication Engineering (ECCE), CUET, Chattogram, Bangladesh</p>
+              <p class="mt-3 text-sm text-zinc-500">A* routing with PD control for a medicine-delivery robot: 30% better performance at 0.15 m/s.</p>
+              <a href="https://doi.org/10.1109/ECCE64574.2025.11013144" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/ECCE64574.2025.11013144 ↗</a>
+            </article>
+
+            <article class="pub reveal flex flex-col rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift transition" data-type="conference" data-topic="ai">
+              <div class="flex items-center justify-between gap-3 font-mono text-[11px]">
+                <span class="rounded-md border border-line bg-ash px-2 py-0.5 text-slate-700">ECCE 2025</span>
+                <span class="text-zinc-400">Feb 2025</span>
+              </div>
+              <h4 class="mt-3 text-[17px] font-semibold leading-snug text-slate-900">Voting and stacking-based ensemble methods to detect Bengali spam SMS with proposal for comprehensive dataset</h4>
+              <p class="mt-2 text-sm">S. S. Alvi, F. A. Nafis, N. Akib, S. T. S. Rafid, A. J. Anonna, <span class="me">G. Saha</span></p>
+              <p class="mt-1 text-sm italic text-slate-700">Int. Conf. on Electrical, Computer and Communication Engineering (ECCE), CUET, Chattogram, Bangladesh</p>
+              <p class="mt-3 text-sm text-zinc-500">New 5,750-message Bengali SMS dataset; Naïve Bayes + XGBoost ensemble reaches 98.61% test accuracy.</p>
+              <a href="https://doi.org/10.1109/ECCE64574.2025.11013231" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/ECCE64574.2025.11013231 ↗</a>
+            </article>
+
+            <article class="pub reveal flex flex-col rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift transition" data-type="conference" data-topic="ai">
+              <div class="flex items-center justify-between gap-3 font-mono text-[11px]">
+                <span class="rounded-md border border-line bg-ash px-2 py-0.5 text-slate-700">ICCIT 2024</span>
+                <span class="text-zinc-400">Dec 2024</span>
+              </div>
+              <h4 class="mt-3 text-[17px] font-semibold leading-snug text-slate-900">An efficient IoT-based fire detection system using quantized deep learning model on resource-constrained devices</h4>
+              <p class="mt-2 text-sm">F. A. Nafis, N. Akib, <span class="me">G. Saha</span>, S. S. Alvi, M. I. A. Anik, A. J. Anonna</p>
+              <p class="mt-1 text-sm italic text-slate-700">27th Int. Conf. on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, pp. 3182–3187</p>
+              <p class="mt-3 text-sm text-zinc-500">Compact CNN for low-power fire detection at the edge, 96.48% test accuracy.</p>
+              <a href="https://doi.org/10.1109/ICCIT64611.2024.11021729" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/ICCIT64611.2024.11021729 ↗</a>
+            </article>
+
+            <article class="pub reveal flex flex-col rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift transition" data-type="conference" data-topic="agri ai">
+              <div class="flex items-center justify-between gap-3 font-mono text-[11px]">
+                <span class="rounded-md border border-line bg-ash px-2 py-0.5 text-slate-700">CSNT 2024</span>
+                <span class="text-zinc-400">Apr 2024</span>
+              </div>
+              <h4 class="mt-3 text-[17px] font-semibold leading-snug text-slate-900">Smart soil monitoring system with crop and fertilizer recommendation features</h4>
+              <p class="mt-2 text-sm"><span class="me">G. Saha</span>, S. H. Suvo, F. T. Tonmoy, J. B. Asad, M. T. Imran, A. K. M. A. M. Azad</p>
+              <p class="mt-1 text-sm italic text-slate-700">13th IEEE Int. Conf. on Communication Systems and Network Technologies (CSNT), Jabalpur, India, pp. 1190–1196</p>
+              <p class="mt-3 text-sm text-zinc-500">Portable NPK, pH and moisture sensing with cloud ML for crop and fertilizer advice.</p>
+              <a href="https://doi.org/10.1109/CSNT60213.2024.10545921" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/CSNT60213.2024.10545921 ↗</a>
+            </article>
+
+            <article class="pub reveal flex flex-col rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift transition" data-type="conference" data-topic="energy">
+              <div class="flex items-center justify-between gap-3 font-mono text-[11px]">
+                <span class="rounded-md border border-line bg-ash px-2 py-0.5 text-slate-700">CSNT 2024</span>
+                <span class="text-zinc-400">Apr 2024</span>
+              </div>
+              <h4 class="mt-3 text-[17px] font-semibold leading-snug text-slate-900">Renewable energy-driven microgrid design for a desalination plant in Noakhali, Bangladesh</h4>
+              <p class="mt-2 text-sm">M. A. H. Faiyaz, <span class="me">G. Saha</span>, S. H. Suvo, S. T. S. Rafid</p>
+              <p class="mt-1 text-sm italic text-slate-700">13th IEEE Int. Conf. on Communication Systems and Network Technologies (CSNT), Jabalpur, India, pp. 1330–1335</p>
+              <p class="mt-3 text-sm text-zinc-500">HOMER-optimized 170 kW solar microgrid for a 100 m³/day RO plant, avoiding ~100 t of CO₂.</p>
+              <a href="https://doi.org/10.1109/CSNT60213.2024.10546168" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/CSNT60213.2024.10546168 ↗</a>
+            </article>
+
+            <article class="pub reveal flex flex-col rounded-2xl border border-line bg-white p-6 shadow-card hover:shadow-lift transition" data-type="conference" data-topic="energy">
+              <div class="flex items-center justify-between gap-3 font-mono text-[11px]">
+                <span class="rounded-md border border-line bg-ash px-2 py-0.5 text-slate-700">ICEEICT 2024</span>
+                <span class="text-zinc-400">May 2024</span>
+              </div>
+              <h4 class="mt-3 text-[17px] font-semibold leading-snug text-slate-900">Energy prospects of floating solar PV considering cloud cover: An analysis on Hatirjheel Lake</h4>
+              <p class="mt-2 text-sm">S. H. Suvo, Nur-E-Tasniya, T. U. Wara, <span class="me">G. Saha</span>, Z. Alam, M. Islam</p>
+              <p class="mt-1 text-sm italic text-slate-700">6th Int. Conf. on Electrical Engineering and Information &amp; Communication Technology (ICEEICT), Dhaka, Bangladesh, pp. 1146–1151</p>
+              <p class="mt-3 text-sm text-zinc-500">A 2.9 MW floating PV plant on 10% of the lake could meet ~28.8% of local demand.</p>
+              <a href="https://doi.org/10.1109/ICEEICT62016.2024.10534469" target="_blank" rel="noopener" class="mt-auto pt-4 inline-flex items-center gap-1 font-mono text-xs text-accent hover:underline">doi.org/10.1109/ICEEICT62016.2024.10534469 ↗</a>
+            </article>
+          </div>
+        </div>
+
+        <!-- ---------- Manuscripts under review ---------- -->
+        <div class="pub-group mt-16" data-group="review">
+          <div class="flex items-baseline justify-between border-b border-line pb-3">
+            <h3 class="text-lg font-semibold text-slate-900">Manuscripts under review</h3>
+            <span class="font-mono text-xs text-zinc-400">2</span>
+          </div>
+          <ul class="mt-4 divide-y divide-line rounded-2xl border border-line bg-white shadow-card">
+            <li class="pub px-6 py-5" data-type="review" data-topic="bio">
+              <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
+                <div>
+                  <p class="font-medium text-slate-900">A comprehensive review of brain-controlled wheelchairs: Recent advancements in EEG, EOG, hybrid technologies, and artifact removal techniques for mobility control</p>
+                  <p class="mt-1 text-sm"><span class="me">G. Saha</span>, F. A. Nafis, M. H. A. Araf, S. M. Shams, A. K. M. A. M. Azad · <span class="italic">Heliyon</span></p>
+                </div>
+                <span class="shrink-0 rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-700 ring-1 ring-amber-200">Revision under review</span>
+              </div>
+            </li>
+            <li class="pub px-6 py-5" data-type="review" data-topic="energy">
+              <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
+                <div>
+                  <p class="font-medium text-slate-900">Optimal sizing of hybrid power system using metaheuristic optimization algorithms considering demand side management</p>
+                  <p class="mt-1 text-sm">A. R. Sagor, <span class="me">G. Saha</span>, S. H. Suvo, S. Ahmad, A. S. N. Huda · <span class="italic">Energies</span></p>
+                </div>
+                <span class="shrink-0 rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-700 ring-1 ring-amber-200">Second-round review</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <p id="pubEmpty" class="mt-10 hidden rounded-xl border border-dashed border-line bg-white p-8 text-center text-sm text-zinc-500">No publications match this filter. <button type="button" id="pubReset" class="font-medium text-accent hover:underline">Reset filters</button></p>
+      </div>
+    </section>
+
+    <!-- ========================= PEER REVIEW & SERVICE ========================= -->
+    <section id="service" class="border-t border-line bg-white/60">
+      <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+        <div class="grid gap-10 lg:grid-cols-[1fr_1.4fr]">
+          <div class="reveal">
+            <p class="font-mono text-xs uppercase tracking-[0.18em] text-accent">03 · Peer review &amp; editorial service</p>
+            <h2 class="mt-3 font-serif text-4xl tracking-tight text-slate-900">Reviewing for the community</h2>
+            <p class="mt-3 max-w-md">I review manuscripts for international journals in robotics, intelligent systems and electrical energy, focusing on methodological rigour, reproducibility and real-world validation.</p>
+            <div class="mt-6">
+              <p class="text-xs font-medium uppercase tracking-wider text-zinc-400">Areas I review in</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-[13px]">
+                <span class="rounded-full border border-line bg-white px-3 py-1">Microgrids &amp; power systems</span>
+                <span class="rounded-full border border-line bg-white px-3 py-1">Renewable energy</span>
+                <span class="rounded-full border border-line bg-white px-3 py-1">Control &amp; robotics</span>
+                <span class="rounded-full border border-line bg-white px-3 py-1">IoT &amp; embedded systems</span>
+                <span class="rounded-full border border-line bg-white px-3 py-1">Applied machine learning</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-4">
+            <article class="reveal flex gap-5 rounded-2xl border border-line bg-white p-6 shadow-card">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy text-white">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <p class="font-mono text-[11px] uppercase tracking-wider text-accent">Reviewer</p>
+                  <span class="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200">2026 – present</span>
+                </div>
+                <h3 class="mt-1 text-lg font-semibold text-slate-900">International Transactions on Electrical Energy Systems</h3>
+                <p class="mt-1 text-sm">Wiley · Power systems, energy conversion and smart grids</p>
+              </div>
+            </article>
+            <article class="reveal flex gap-5 rounded-2xl border border-line bg-white p-6 shadow-card">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy text-white">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <p class="font-mono text-[11px] uppercase tracking-wider text-accent">Reviewer</p>
+                  <span class="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200">2025 – present</span>
+                </div>
+                <h3 class="mt-1 text-lg font-semibold text-slate-900">Journal of Automation, Mobile Robotics and Intelligent Systems (JAMRIS)</h3>
+                <p class="mt-1 text-sm">Automation, mobile robotics and intelligent control</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= EXPERIENCE ========================= -->
+    <section id="experience" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+        <div class="reveal max-w-2xl">
+          <p class="font-mono text-xs uppercase tracking-[0.18em] text-accent">04 · Experience</p>
+          <h2 class="mt-3 font-serif text-4xl tracking-tight text-slate-900">Research &amp; teaching</h2>
+        </div>
+
+        <div class="mt-10 grid gap-10 lg:grid-cols-[1.5fr_1fr]">
+          <!-- Research timeline -->
+          <ol class="relative border-l border-line pl-7">
+            <li class="reveal relative pb-10">
+              <span class="absolute -left-[33px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-accent ring-4 ring-accent-soft"></span>
+              <p class="font-mono text-xs text-zinc-400">Sep 2024 – present · Supervisor: Prof. A. K. M. Abdul Malek Azad</p>
+              <h3 class="mt-1 text-lg font-semibold text-slate-900">Brain–computer interfaced wheelchair for quadriplegia patients</h3>
+              <ul class="mt-2 space-y-1.5 text-[15px] marker:text-zinc-300 list-disc pl-4">
+                <li>Real-time EMG blink-intent detection with cascaded Butterworth band-pass and 50 Hz notch filtering: <strong class="font-semibold text-slate-800">93% accuracy at 0.45 s latency</strong> across 15 participants.</li>
+                <li>Scanning control interface in real-time firmware (Arduino/ESP) for single-blink wheelchair driving.</li>
+                <li>Obstacle-avoidance layer; ToF sensing responded 13% faster than ultrasonic.</li>
+              </ul>
+            </li>
+            <li class="reveal relative pb-10">
+              <span class="absolute -left-[33px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-navy"></span>
+              <p class="font-mono text-xs text-zinc-400">Nov 2024 – May 2025 · Supervisor: Dr. A. S. Nazmul Huda</p>
+              <h3 class="mt-1 text-lg font-semibold text-slate-900">Demand-side management &amp; optimal sizing of an industrial hybrid microgrid</h3>
+              <ul class="mt-2 space-y-1.5 text-[15px] marker:text-zinc-300 list-disc pl-4">
+                <li>Machine-level load data from a 1.44 MW-peak factory; 40 loads classed as critical, shiftable or clippable.</li>
+                <li>Combined DSM strategy cut the daily bill by &gt;30% and NPC by ~18%, raising renewable fraction from 57.8% to 71.9%.</li>
+                <li>PSO, GA and DE sizing: <strong class="font-semibold text-slate-800">GA design 7.58% cheaper than HOMER</strong>, with a 44% smaller diesel generator.</li>
+              </ul>
+            </li>
+            <li class="reveal relative">
+              <span class="absolute -left-[33px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-navy"></span>
+              <p class="font-mono text-xs text-zinc-400">Oct 2023 – Sep 2024 · Supervisor: Prof. A. K. M. Abdul Malek Azad</p>
+              <h3 class="mt-1 text-lg font-semibold text-slate-900">IoT-driven precision agriculture</h3>
+              <ul class="mt-2 space-y-1.5 text-[15px] marker:text-zinc-300 list-disc pl-4">
+                <li>Landsat-8 NDVI/NDSI + K-means vegetation and salinity mapping, with LSTM forecasting.</li>
+                <li>ESP32 soil unit with cloud ML; Random Forest chosen from eight models (97.35%, 22 crops).</li>
+                <li>Solar fuzzy-logic irrigation used ~70% less water than threshold control. Published in PLOS ONE.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <!-- Teaching / education / honors -->
+          <div class="grid content-start gap-4">
+            <div class="reveal rounded-2xl border border-line bg-white p-6 shadow-card">
+              <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-900">Teaching</h3>
+              <ul class="mt-4 space-y-4 text-sm">
+                <li><p class="font-medium text-slate-900">Adjunct Lecturer, Dept. of EEE, BRAC University</p><p class="font-mono text-xs text-zinc-400">Jun 2025 – Jan 2026</p><p class="mt-1">Four lab sections of Electrical Circuits I and Digital Signal Processing, 130+ students.</p></li>
+                <li><p class="font-medium text-slate-900">Teaching Assistant, Dept. of MNS, BRAC University</p><p class="font-mono text-xs text-zinc-400">Sep 2022 – Sep 2023</p><p class="mt-1">Tutorials and grading in Statistics &amp; Probability.</p></li>
+                <li><p class="font-medium text-slate-900">Student Mentor, Office of Academic Advising</p><p class="font-mono text-xs text-zinc-400">May 2022 – Sep 2023</p></li>
+              </ul>
+              <p class="mt-4 border-t border-line pt-4 text-xs text-zinc-500"><span class="font-medium text-slate-700">Teaching interests:</span> Electrical Circuits, DSP, Control Systems, Power Electronics, Embedded Systems</p>
+            </div>
+            <div class="reveal rounded-2xl border border-line bg-white p-6 shadow-card">
+              <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-900">Education</h3>
+              <p class="mt-4 font-medium text-slate-900">B.Sc. in Electrical and Electronic Engineering</p>
+              <p class="text-sm">BRAC University, Dhaka · 2019 – 2023</p>
+              <p class="mt-1 text-sm">CGPA 3.74 / 4.00 · Graduated with High Distinction</p>
+            </div>
+            <div class="reveal rounded-2xl border border-line bg-white p-6 shadow-card">
+              <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-900">Honors</h3>
+              <ul class="mt-4 space-y-2 text-sm">
+                <li class="flex justify-between gap-4"><span>Rewarding Quality and Publication (RQJP) Award, BRAC University</span><span class="font-mono text-xs text-zinc-400">2026</span></li>
+                <li class="flex justify-between gap-4"><span>Vice Chancellor's List (×2), Dean's List (×1)</span><span class="font-mono text-xs text-zinc-400">2019–23</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toolbox -->
+        <div class="reveal mt-12 rounded-2xl border border-line bg-white p-6 shadow-card">
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-900">Toolbox</h3>
+          <dl class="mt-4 grid gap-x-8 gap-y-3 text-sm sm:grid-cols-2">
+            <div><dt class="font-medium text-slate-800">Programming</dt><dd>Python, MATLAB, Embedded C, C++</dd></div>
+            <div><dt class="font-medium text-slate-800">Power &amp; energy</dt><dd>HOMER Pro, PVsyst, MATLAB/Simulink, OpenDSS, GridLAB-D</dd></div>
+            <div><dt class="font-medium text-slate-800">Optimization &amp; control</dt><dd>PSO, GA, DE, fuzzy logic control</dd></div>
+            <div><dt class="font-medium text-slate-800">Embedded &amp; IoT</dt><dd>ESP32, Arduino, Raspberry Pi, MQTT, Modbus</dd></div>
+            <div><dt class="font-medium text-slate-800">ML &amp; data</dt><dd>scikit-learn, PyTorch, OpenCV, Pandas, NumPy, GeoPandas</dd></div>
+            <div><dt class="font-medium text-slate-800">Remote sensing &amp; hardware</dt><dd>ArcGIS, Google Earth Engine, KiCad, Proteus, PSpice, SolidWorks</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CONTACT ========================= -->
+    <section id="contact" class="border-t border-line bg-navy text-slate-300">
+      <div class="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-16 sm:px-6 md:flex-row md:items-center md:justify-between">
+        <div class="reveal max-w-xl">
+          <p class="font-mono text-xs uppercase tracking-[0.18em] text-indigo-300">05 · Contact</p>
+          <h2 class="mt-3 font-serif text-4xl tracking-tight text-white">Let's talk research</h2>
+          <p class="mt-3">Open to graduate research positions, collaborations in smart energy, IoT sensing and precision agriculture, and review invitations.</p>
+        </div>
+        <div class="reveal flex flex-col gap-3 sm:flex-row md:flex-col">
+          <a href="mailto:gourabsaha.aca@gmail.com" class="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-semibold text-navy hover:bg-slate-100 transition">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            gourabsaha.aca@gmail.com
+          </a>
+          <a href="assets/Gourab_Saha_CV.pdf" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 px-5 py-3 text-sm font-medium text-white hover:bg-white/10 transition">Download CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="border-t border-line bg-canvas">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-zinc-500 sm:px-6 md:flex-row md:items-center md:justify-between">
+      <p>© <span id="year">2026</span> Gourab Saha · Dhaka, Bangladesh</p>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+          Hosted on GitHub Pages
+        </span>
+        <span>Last updated <time id="lastUpdated" datetime="2026-10-25">25 Oct 2026</time></span>
+        <a href="#top" class="text-navy hover:text-accent">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================= LIGHTBOX ========================= -->
+  <div id="lightbox" class="fixed inset-0 z-[80] hidden flex-col bg-slate-950/85 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="lbCaption">
+    <div class="flex items-center justify-between gap-3 px-4 py-3 text-white sm:px-6">
+      <p id="lbCaption" class="line-clamp-2 text-sm text-slate-200"></p>
+      <div class="flex shrink-0 items-center gap-1">
+        <button id="lbZoom" type="button" class="inline-flex h-9 w-9 items-center justify-center rounded-lg hover:bg-white/10" aria-label="Toggle zoom" title="Zoom (Z)">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg>
+        </button>
+        <a id="lbOpen" href="#" target="_blank" rel="noopener" class="inline-flex h-9 w-9 items-center justify-center rounded-lg hover:bg-white/10" aria-label="Open full-size image in new tab" title="Open full size">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-8 8M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+        </a>
+        <button id="lbClose" type="button" class="inline-flex h-9 w-9 items-center justify-center rounded-lg hover:bg-white/10" aria-label="Close" title="Close (Esc)">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="relative flex min-h-0 flex-1 items-center justify-center">
+      <button id="lbPrev" type="button" class="absolute left-2 z-10 hidden h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:left-4 sm:flex" aria-label="Previous poster">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <div id="lbStage" class="lb-stage flex h-full w-full cursor-zoom-in items-center justify-center px-2 pb-4 sm:px-16">
+        <img id="lbImg" alt="" class="max-h-full max-w-full rounded-lg bg-white object-contain shadow-2xl" />
+      </div>
+      <button id="lbNext" type="button" class="absolute right-2 z-10 hidden h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 sm:right-4 sm:flex" aria-label="Next poster">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================= SCRIPTS ========================= -->
+  <script>
+  (() => {
+    'use strict';
+    const $ = (s, el = document) => el.querySelector(s);
+    const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ---------- Footer: year + last updated ---------- */
+    $('#year').textContent = new Date().getFullYear();
+    const lm = new Date(document.lastModified);
+    if (!isNaN(lm) && lm.getFullYear() >= 2026) {
+      const t = $('#lastUpdated');
+      t.dateTime = lm.toISOString().slice(0, 10);
+      t.textContent = lm.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+    }
+
+    /* ---------- Mobile drawer ---------- */
+    const drawer = $('#drawer'), backdrop = $('#drawerBackdrop'), menuBtn = $('#menuBtn');
+    const setDrawer = (open) => {
+      drawer.classList.toggle('translate-x-full', !open);
+      backdrop.classList.toggle('hidden', !open);
+      drawer.setAttribute('aria-hidden', String(!open));
+      menuBtn.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open ? 'hidden' : '';
+      if (open) $('#drawerClose').focus();
+    };
+    menuBtn.addEventListener('click', () => setDrawer(true));
+    $('#drawerClose').addEventListener('click', () => setDrawer(false));
+    backdrop.addEventListener('click', () => setDrawer(false));
+    $$('.drawer-link').forEach(a => a.addEventListener('click', () => setDrawer(false)));
+
+    /* ---------- Active nav link on scroll ---------- */
+    const navLinks = $$('.nav-link');
+    const sections = navLinks.map(a => $(a.getAttribute('href'))).filter(Boolean);
+    if ('IntersectionObserver' in window) {
+      const navObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+          }
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      sections.forEach(s => navObs.observe(s));
+    }
+
+    /* ---------- Reveal on scroll ---------- */
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      const rObs = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      $$('.reveal').forEach(el => rObs.observe(el));
+    } else {
+      $$('.reveal').forEach(el => el.classList.add('in'));
+    }
+
+    /* ---------- Publication filtering ---------- */
+    const pubs = $$('.pub');
+    const groups = $$('.pub-group');
+    const state = { type: 'all', topic: 'all', q: '' };
+    const counts = { all: pubs.length };
+    pubs.forEach(p => { counts[p.dataset.type] = (counts[p.dataset.type] || 0) + 1; });
+    $$('[data-count]').forEach(el => { el.textContent = counts[el.dataset.count] || 0; });
+
+    const applyFilters = () => {
+      const q = state.q.trim().toLowerCase();
+      let shown = 0;
+      pubs.forEach(p => {
+        const okType = state.type === 'all' || p.dataset.type === state.type;
+        const okTopic = state.topic === 'all' || p.dataset.topic.split(' ').includes(state.topic);
+        const okQ = !q || p.textContent.toLowerCase().includes(q);
+        const show = okType && okTopic && okQ;
+        p.hidden = !show;
+        if (show) { shown++; p.classList.add('in'); }
+      });
+      groups.forEach(g => { g.hidden = !$$('.pub', g).some(p => !p.hidden); });
+      $('#pubEmpty').classList.toggle('hidden', shown > 0);
+    };
+    $$('.chip-filter').forEach(b => b.addEventListener('click', () => {
+      state.type = b.dataset.type;
+      $$('.chip-filter').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      applyFilters();
+    }));
+    $$('.topic-filter').forEach(b => b.addEventListener('click', () => {
+      state.topic = b.dataset.topic;
+      $$('.topic-filter').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      applyFilters();
+    }));
+    $('#pubSearch').addEventListener('input', e => { state.q = e.target.value; applyFilters(); });
+    $('#pubReset').addEventListener('click', () => {
+      state.type = 'all'; state.topic = 'all'; state.q = '';
+      $('#pubSearch').value = '';
+      $$('.chip-filter').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.type === 'all')));
+      $$('.topic-filter').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.topic === 'all')));
+      applyFilters();
+    });
+
+    /* ---------- Poster lightbox ---------- */
+    const lb = $('#lightbox'), lbImg = $('#lbImg'), lbStage = $('#lbStage');
+    let items = [], idx = 0, lastFocus = null;
+    const collect = () => $$('.poster-thumb').filter(t => !t.closest('.pub')?.hidden);
+    const show = (i) => {
+      idx = (i + items.length) % items.length;
+      const t = items[idx];
+      lbStage.classList.remove('zoomed');
+      lbImg.src = t.dataset.lightbox;
+      lbImg.alt = t.querySelector('img')?.alt || 'Research poster';
+      $('#lbCaption').textContent = t.dataset.caption || '';
+      $('#lbOpen').href = t.dataset.lightbox;
+      const multi = items.length > 1;
+      $('#lbPrev').style.display = multi ? '' : 'none';
+      $('#lbNext').style.display = multi ? '' : 'none';
+    };
+    const openLb = (thumb) => {
+      items = collect(); lastFocus = document.activeElement;
+      show(Math.max(0, items.indexOf(thumb)));
+      lb.classList.add('open'); document.body.style.overflow = 'hidden';
+      $('#lbClose').focus();
+    };
+    const closeLb = () => {
+      lb.classList.remove('open'); document.body.style.overflow = '';
+      lbImg.removeAttribute('src');
+      lastFocus && lastFocus.focus();
+    };
+    $$('.poster-thumb').forEach(t => t.addEventListener('click', () => openLb(t)));
+    $('#lbClose').addEventListener('click', closeLb);
+    $('#lbPrev').addEventListener('click', () => show(idx - 1));
+    $('#lbNext').addEventListener('click', () => show(idx + 1));
+    $('#lbZoom').addEventListener('click', () => lbStage.classList.toggle('zoomed'));
+    lbImg.addEventListener('click', e => { e.stopPropagation(); lbStage.classList.toggle('zoomed'); });
+    lbStage.addEventListener('click', e => { if (e.target === lbStage) closeLb(); });
+    lbImg.addEventListener('error', () => { $('#lbCaption').textContent = 'Poster image not found. Upload it to ' + (items[idx]?.dataset.lightbox || 'assets/posters/'); });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !drawer.classList.contains('translate-x-full')) setDrawer(false);
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLb();
+      else if (e.key === 'ArrowRight') show(idx + 1);
+      else if (e.key === 'ArrowLeft') show(idx - 1);
+      else if (e.key.toLowerCase() === 'z') lbStage.classList.toggle('zoomed');
+      else if (e.key === 'Tab') { // simple focus trap
+        const f = $$('button, a[href]', lb).filter(el => el.offsetParent !== null);
+        const first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    });
+    // Swipe on touch devices
+    let sx = null;
+    lbStage.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
+    lbStage.addEventListener('touchend', e => {
+      if (sx === null || lbStage.classList.contains('zoomed')) return;
+      const dx = e.changedTouches[0].clientX - sx; sx = null;
+      if (Math.abs(dx) > 50) show(idx + (dx < 0 ? 1 : -1));
+    });
+
+    /* ---------- Google Scholar metrics ----------
+       Reads data/scholar.json (edit by hand, or let the optional GitHub Action refresh it).
+       Falls back to the values below if the file can't be loaded (e.g. opening index.html from disk). */
+    const SCHOLAR_FALLBACK = { citations: null, h_index: null, i10_index: null, updated: null };
+    const fmt = n => Number(n).toLocaleString('en-US');
+    const countUp = (el, to) => {
+      if (reduceMotion || to < 5) { el.textContent = fmt(to); return; }
+      const t0 = performance.now(), dur = 1100;
+      const step = (t) => {
+        const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+        el.textContent = fmt(Math.round(to * e));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    const renderScholar = (d, source) => {
+      const has = v => typeof v === 'number' && isFinite(v);
+      ['citations', 'h_index', 'i10_index'].forEach(k => {
+        const el = $(`[data-scholar="${k}"]`);
+        if (has(d[k])) countUp(el, d[k]); else el.textContent = '—';
+      });
+      const inline = $('[data-scholar="citations-inline"]');
+      if (has(d.citations)) { inline.textContent = fmt(d.citations); }
+      else { inline.parentElement.textContent = 'View citations on Google Scholar'; }
+      const status = $('#scholarStatus');
+      status.textContent = has(d.citations) ? (source === 'file' ? 'synced' : 'cached') : 'live on Scholar';
+      if (d.updated) {
+        const dt = new Date(d.updated);
+        $('#scholarUpdated').textContent = isNaN(dt) ? 'See live profile' :
+          'Updated ' + dt.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) + ' · see live profile';
+      }
+    };
+    fetch('data/scholar.json', { cache: 'no-cache' })
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(d => renderScholar({ ...SCHOLAR_FALLBACK, ...d }, 'file'))
+      .catch(() => renderScholar(SCHOLAR_FALLBACK, 'fallback'));
+  })();
+  </script>
+</body>
+</html>
